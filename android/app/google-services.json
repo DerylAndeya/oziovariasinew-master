@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739071929673",
+    "project_id": "oziovariasi-2c2d2",
+    "storage_bucket": "oziovariasi-2c2d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739071929673:android:1b68fabba041b84d263e98",
+        "android_client_info": {
+          "package_name": "com.oziovariasi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCsWyKUTkm-5CyOp1-Ptc0qGJwlVAvMb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

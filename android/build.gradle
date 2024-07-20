@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlin_version = '1.8.0' // Gantilah dengan versi yang sesuai
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.4.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        // classpath plugin lainnya
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
+// Konfigurasi build directory untuk subprojects
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+// Tugas untuk membersihkan build directory
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
